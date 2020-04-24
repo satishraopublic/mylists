@@ -11,7 +11,8 @@ import { MylistdisplayComponent } from './components/mylistdisplay/mylistdisplay
 import { ListItemsComponent } from './components/list-items/list-items.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListItemEditComponent } from './components/list-item-edit/list-item-edit.component'
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     MylistdisplayComponent,
     ListItemsComponent,
     WelcomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ListItemEditComponent
   ],
   imports: [
     BrowserModule,

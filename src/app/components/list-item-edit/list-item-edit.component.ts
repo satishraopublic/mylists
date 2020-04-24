@@ -3,16 +3,16 @@ import { ActivatedRoute } from '@angular/router';
 import { MylistsApiService } from '../../services/mylists-api.service';
 import {Location} from '@angular/common';
 
-
 @Component({
-  selector: 'app-list-items',
-  templateUrl: './list-items.component.html',
-  styleUrls: ['./list-items.component.css']
+  selector: 'app-list-item-edit',
+  templateUrl: './list-item-edit.component.html',
+  styleUrls: ['./list-item-edit.component.css']
 })
-export class ListItemsComponent implements OnInit {
-    id: any;
-    mylist: any;
-    constructor(private location: Location, private route: ActivatedRoute, private api: MylistsApiService) {  }
+export class ListItemEditComponent implements OnInit {
+  id: any;
+  mylist: any;
+
+  constructor(private location: Location, private route: ActivatedRoute, private api: MylistsApiService) { }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');

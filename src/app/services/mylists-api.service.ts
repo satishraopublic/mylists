@@ -20,6 +20,6 @@ export class MylistsApiService {
   }
 
   getListDetails(id: number){
-    return this.retVal[id];
+    return this.retVal[id-1];
   }
 }

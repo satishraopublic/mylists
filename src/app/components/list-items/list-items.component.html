@@ -4,4 +4,8 @@
       <h6 class="card-subtitle mb-2 text-muted">Item count <span class="badge badge-danger">{{ mylist.itemCount }}</span></h6>
       <p class="card-text">{{ mylist.description }}</p>
     </div>
+    <div class="btn btn-group">
+      <a [routerLink]="['/mylists', id, 'edit']" class="btn btn-dark" >Edit</a>
+      <button class="btn btn-danger" (click)="cancelOperation()" >Cancel</button>
+    </div>
   </div>
