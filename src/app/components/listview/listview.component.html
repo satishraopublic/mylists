@@ -1,0 +1,5 @@
+<div style="margin: 5px">
+<div class="card-deck">
+        <app-mylistdisplay *ngFor="let list of mylists" [id]="list.id" [myListName]="list.name" [itemCount]="list.itemCount" [description]="list.description"></app-mylistdisplay>
+</div>
+</div>

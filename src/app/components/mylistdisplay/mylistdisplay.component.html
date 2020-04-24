@@ -1,0 +1,8 @@
+    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+    <div class="card-header">Your list contains <span class="badge badge-warning">{{ itemCount }} items</span></div>
+    <div class="card-body">
+      <h5 class="card-title">{{ name }}</h5>
+      <p class="card-text">{{ description }}</p>
+    </div>
+    <a type="button" class="btn btn-dark" [routerLink]="['/mylists', id]">Open</a>
+  </div>
